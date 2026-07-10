@@ -1,51 +1,49 @@
 {
   "expo": {
-    "name": "MedAssist",
-    "slug": "MedAssist",
+    "name": "MedAssist-app",
+    "slug": "MedAssist-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/logo.png",
-    "scheme": "medassist",
+    "icon": "./assets/images/icon.png",
+    "scheme": "medassistapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "package": "com.emmanuel.medassist",
-      "googleServicesFile": "./android/app/google-services (2).json",
+      "icon": "./assets/images/notification-icon.jpg",
+      "notification": {
+        "icon": "./assets/images/notification-icon.jpg",
+        "color": "#0A84FF"
+      },
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/logo.png",
-        "backgroundImage": "./assets/images/logo.png",
-        "monochromeImage": "./assets/images/logo.png"
+        "foregroundImage": "./assets/images/notification-icon.jpg",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.sector911.MedAssistapp",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/logo.png"
+      "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/logo.png",
+          "image": "./assets/images/icon-logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
           "dark": {
             "backgroundColor": "#ffffff"
           }
-        }
-      ],
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/images/logo.png",
-          "color": "#2563EB"
         }
       ]
     ],
@@ -56,13 +54,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "09686ef2-3dc6-472e-a864-1379cfce982b"
+        "projectId": "749f19ca-52cf-4fad-869c-4801e96590dd"
       }
     },
-    "splash": {
-      "image": "./assets/images/logo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    }
+    "owner": "sector911"
   }
 }
